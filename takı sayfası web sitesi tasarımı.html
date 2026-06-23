@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EdaNur Jewelry</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#faf7f2;
+    color:#222;
+}
+
+/* HEADER */
+
+header{
+    width:100%;
+    background:#111;
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo{
+    color:#d4af37;
+    font-size:30px;
+    font-weight:700;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    transition:0.3s;
+    font-weight:500;
+}
+
+nav a:hover{
+    color:#d4af37;
+}
+
+/* HERO */
+
+.hero{
+    width:100%;
+    height:90vh;
+    background:
+    linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.45)),
+    url('https://images.unsplash.com/photo-1617038220319-276d3cfab638?q=80&w=1600');
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+    padding:20px;
+}
+
+.hero-content h1{
+    font-size:65px;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    font-size:22px;
+    margin-bottom:30px;
+}
+
+.hero-content button{
+    padding:15px 35px;
+    border:none;
+    background:#d4af37;
+    color:white;
+    font-size:18px;
+    border-radius:40px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.hero-content button:hover{
+    background:white;
+    color:#111;
+}
+
+/* SECTION */
+
+.section-title{
+    text-align:center;
+    margin-top:70px;
+    font-size:40px;
+    color:#111;
+}
+
+/* PRODUCTS */
+
+.products{
+    width:90%;
+    margin:50px auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:35px;
+}
+
+.card{
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card img{
+    width:100%;
+    height:320px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:20px;
+    text-align:center;
+}
+
+.card-content h2{
+    margin-bottom:10px;
+}
+
+.price{
+    color:#d4af37;
+    font-size:24px;
+    font-weight:bold;
+    margin:15px 0;
+}
+
+.card-content button{
+    background:#111;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:30px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.card-content button:hover{
+    background:#d4af37;
+}
+
+/* ABOUT */
+
+.about{
+    width:90%;
+    margin:80px auto;
+    text-align:center;
+    line-height:1.8;
+    font-size:18px;
+}
+
+/* CONTACT */
+
+.contact{
+    background:#111;
+    color:white;
+    padding:70px 20px;
+    text-align:center;
+}
+
+.contact h2{
+    font-size:40px;
+    margin-bottom:20px;
+}
+
+.contact p{
+    margin:10px 0;
+    font-size:18px;
+}
+
+/* FOOTER */
+
+footer{
+    background:#000;
+    color:#aaa;
+    text-align:center;
+    padding:20px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    .hero-content h1{
+        font-size:42px;
+    }
+
+    nav{
+        display:none;
+    }
+
+}
+
+</style>
+</head>
+<body>
+
+<header>
+
+    <div class="logo">EdaNur Jewelry</div>
+
+    <nav>
+        <a href="#">Ana Sayfa</a>
+        <a href="#">Takılar</a>
+        <a href="#">Hakkımızda</a>
+        <a href="#">İletişim</a>
+    </nav>
+
+</header>
+
+<!-- HERO -->
+
+<section class="hero">
+
+    <div class="hero-content">
+        <h1>Zarafetin Işıltısı</h1>
+        <p>Yüzük, kolye, küpe ve şahmeran koleksiyonları</p>
+        <button>Koleksiyonu İncele</button>
+    </div>
+
+</section>
+
+<!-- PRODUCTS -->
+
+<h1 class="section-title">Öne Çıkan Takılar</h1>
+
+<section class="products">
+
+    <!-- 1 -->
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?q=80&w=1200">
+
+        <div class="card-content">
+            <h2>Pırlanta Yüzük</h2>
+            <p>Özel günler için zarif tasarım.</p>
+            <div class="price">₺1.499</div>
+            <button>Sepete Ekle</button>
+        </div>
+    </div>
+
+    <!-- 2 -->
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?q=80&w=1200">
+
+        <div class="card-content">
+            <h2>Altın Kolye</h2>
+            <p>Modern ve şık görünüm.</p>
+            <div class="price">₺899</div>
+            <button>Sepete Ekle</button>
+        </div>
+    </div>
+
+    <!-- 3 -->
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1635767798638-3e25273a8236?q=80&w=1200">
+
+        <div class="card-content">
+            <h2>Zarif Küpe</h2>
+            <p>Göz alıcı detaylar.</p>
+            <div class="price">₺649</div>
+            <button>Sepete Ekle</button>
+        </div>
+    </div>
+
+    <!-- 4 -->
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1619119069152-a2b331eb392a?q=80&w=1200">
+
+        <div class="card-content">
+            <h2>Şahmeran</h2>
+            <p>Minimal ve estetik tasarım.</p>
+            <div class="price">₺799</div>
+            <button>Sepete Ekle</button>
+        </div>
+    </div>
+
+    <!-- 5 -->
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?q=80&w=1200">
+
+        <div class="card-content">
+            <h2>Gümüş Bileklik</h2>
+            <p>Günlük kullanım için ideal.</p>
+            <div class="price">₺499</div>
+            <button>Sepete Ekle</button>
+        </div>
+    </div>
+
+    <!-- 6 -->
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?q=80&w=1200">
+
+        <div class="card-content">
+            <h2>Lüks Set</h2>
+            <p>Kolye ve küpe kombinasyonu.</p>
+            <div class="price">₺2.199</div>
+            <button>Sepete Ekle</button>
+        </div>
+    </div>
+
+</section>
+
+<!-- ABOUT -->
+
+<section class="about">
+
+    <h1 class="section-title">Hakkımızda</h1>
+
+    <p>
+        EdaNur Jewelry olarak zarafeti ve şıklığı bir araya getiriyoruz.
+        Modern tasarımlarımızla her stile uygun yüzük, kolye, küpe,
+        şahmeran ve bileklik koleksiyonları sunuyoruz.
+        Kaliteli işçilik ve estetik detaylarla sizlere özel takılar hazırlıyoruz.
+    </p>
+
+</section>
+
+<!-- CONTACT -->
+
+<section class="contact">
+
+    <h2>İletişim</h2>
+
+    <p>Email: edanurcetinkaya481@gmail.com</p>
+    <p>Instagram: @edanurjewelry</p>
+    <p>Türkiye / Sinop</p>
+
+</section>
+
+<footer>
+    © 2026 EdaNur Jewelry | Tüm Hakları Saklıdır
+</footer>
+<script>
+
+let sepet = [];
+
+const buttons = document.querySelectorAll(".card-content button");
+
+buttons.forEach((button) => {
+
+    button.addEventListener("click", () => {
+
+        const urun =
+        button.parentElement.querySelector("h2").innerText;
+
+        const fiyat =
+        button.parentElement.querySelector(".price").innerText;
+
+        sepet.push({
+            urun: urun,
+            fiyat: fiyat
+        });
+
+        alert(urun + " sepete eklendi 🛒");
+
+        console.log(sepet);
+
+    });
+
+});
+
+</script>
+</body>
+</html>
